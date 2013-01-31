@@ -58,6 +58,7 @@ public class DecimalBigInt
         // zero == until now no nonzero digit seen.
         boolean zero = true;
         for(int digit : digits) {
+            //TODO  negative numbers support
             if(digit < 0 ||  RADIX <= digit) {
                 throw new IllegalArgumentException("digit " + digit +
                                                    " out of range!");
